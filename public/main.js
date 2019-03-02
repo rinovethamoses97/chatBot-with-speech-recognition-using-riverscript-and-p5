@@ -1,4 +1,5 @@
 var brain=new RiveScript();
+var speech=new p5.Speech();
 brain.loadFile("brain.rive").then(loading_done).catch(loading_error);
 function loading_done(){
     console.log("Bot loaded");
@@ -12,6 +13,7 @@ function getReply(){
     document.getElementById("userInput").value="";
     brain.reply("local-user",userInput).then(function(reply){
         $("#chatBox").append("User:: "+userInput+"<br>");
+        speech.speak(reply);
         $("#chatBox").append("Bot:: "+reply+"<br>");
     });
 }
