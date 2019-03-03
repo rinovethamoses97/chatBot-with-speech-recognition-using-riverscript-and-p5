@@ -13,7 +13,7 @@
 + i am *
 - welcome <star> i am bot
 
-+ ok *
++ ok [*]
 - Nice
 
 + how are you
@@ -25,3 +25,9 @@
 
 + *
 - i could not find any reply for this
+
++ who made you
+- i am made by rino
+
++ [*] good [*]
+- I know it already
