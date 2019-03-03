@@ -11,7 +11,7 @@
 - i  am <bot name> 
 
 + i am *
-- welcome <star> i am bot
+- <set username=<star>> welcome <star> i am bot
 
 + ok [*]
 - Nice
@@ -25,6 +25,10 @@
 
 + vanakkam
 - vanakkam
+
++ bye [*]
+* <get username> == undefined => bye bye
+- bye bye <get username>
 
 + *
 - i could not find any reply for this
